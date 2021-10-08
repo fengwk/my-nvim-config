@@ -11,6 +11,9 @@ Plug 'vim-airline/vim-airline'
 " https://github.com/connorholyday/vim-snazzy
 Plug 'connorholyday/vim-snazzy'
 
+" deus 配色
+Plug 'theniceboy/nvim-deus'
+
 " indentline 缩进线
 " https://github.com/Yggdroot/indentLine
 Plug 'Yggdroot/indentLine'
@@ -111,9 +114,12 @@ let g:ruby_host_prog = '/home/fengwk/.local/share/gem/ruby/3.0.0/bin/neovim-ruby
 syntax on
 
 " 设置配色方案
-color snazzy
+" color snazzy
+color deus
 " 使配色能更加兼容终端
 let &t_ut=''
+" 透明背景
+hi Normal ctermfg=252 ctermbg=none
 
 " 设置编码
 set encoding=utf-8
