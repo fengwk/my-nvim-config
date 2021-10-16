@@ -119,7 +119,7 @@ color deus
 " 使配色能更加兼容终端
 let &t_ut=''
 " 透明背景
-hi Normal ctermfg=252 ctermbg=none
+" hi Normal ctermfg=252 ctermbg=none
 
 " 设置编码
 set encoding=utf-8
@@ -199,6 +199,7 @@ nnoremap <C-s> :w<CR>
 " 使用 Ctrl+q 退出
 nnoremap <C-q> :q<CR>
 
+" fzf.vim
 " Ctrl+p 查看文件列表
 " Ctrl+e 查看当前Buffer，两次Ctrl+e快速切换上次打开的Buffer
 nnoremap <C-p> :Files<CR>
