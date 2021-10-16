@@ -36,6 +36,10 @@ Plug 'junegunn/fzf.vim'
 " https://github.com/neoclide/coc.nvim
 " Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
+" fcitx.vim
+" https://github.com/lilydjwg/fcitx.vim
+Plug 'lilydjwg/fcitx.vim'
+
 call plug#end()
 
 " " coc.nvim
@@ -205,3 +209,8 @@ nnoremap <C-q> :q<CR>
 nnoremap <C-p> :Files<CR>
 nnoremap <C-e> :Buffers<CR>
 let g:fzf_action = { 'ctrl-e': 'edit' }
+
+" 重新打开时光标定位到退出时的位置
+if has("autocmd")
+    au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
+endif
