@@ -1,14 +1,21 @@
-# vim config
+# My Nvim Config
 
-个人vim配置
+个人neovim配置，使用neovim的最大原因是vim在模式切换时总会有一个短暂的时延造成不良的使用体验。
 
-# 安装
+# Installation
 
-1. 推荐使用neovim其在性能与插件完善度上更好
-2. 将仓库中的内容下载到`~/.config/nvim`中
-3. 安装[vim-plug](https://github.com/junegunn/vim-plug)
-4. 安装各项插件，其中jdt安装参考`init.vim`中注释说明
+1. neovim
+    ```shell
+    yay -S neovim
+    git clone git@github.com:fengwk/my-nvim-config.git ~/.config/nvim
+    ```
+1. 安装[vim-plug](https://github.com/junegunn/vim-plug)
+1. 安装插件
+    ```shell
+    :PlugInstall
+    ```
+1. 若jdt安装失败可以参考[这篇文章](https://blog.csdn.net/lxyoucan/article/details/115460229)
 
-# vim
+# Vim Usage
 
-关于vim的使用技巧见[learning-vim.md](./learning-vim.md)
+关于vim的基本使用方法以及当前配置支持的插件技巧见[learning-vim.md](./learning-vim.md)

@@ -51,6 +51,7 @@ Plug 'godlygeek/tabular'
 call plug#end()
 
 source $HOME/.config/nvim/coc.vim
+source $HOME/.config/nvim/markdown-preview.vim
 
 " 配色方案
 " color snazzy
@@ -62,9 +63,6 @@ color deus
 nnoremap <C-p> :Files<CR>
 nnoremap <C-e> :Buffers<CR>
 let g:fzf_action = { 'ctrl-e': 'edit' }
-
-" markdown-preview
-nnoremap mm :MarkdownPreviewToggle<CR>
 
 " nerdtree
 nnoremap tt :NERDTreeToggle<CR>
