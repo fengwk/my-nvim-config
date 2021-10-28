@@ -7,12 +7,14 @@ call plug#begin('~/.config/nvim/plugged')
 " https://github.com/vim-airline/vim-airline
 Plug 'vim-airline/vim-airline'
 
-" snazzy 配色方案
-" https://github.com/connorholyday/vim-snazzy
+" snazzy配色
 Plug 'connorholyday/vim-snazzy'
 
-" deus 配色
+" deus配色
 Plug 'theniceboy/nvim-deus'
+
+" gruvbox配色
+Plug 'morhetz/gruvbox'
 
 " indentline 缩进线
 " https://github.com/Yggdroot/indentLine
@@ -55,14 +57,15 @@ source $HOME/.config/nvim/markdown-preview.vim
 
 " 配色方案
 " color snazzy
-color deus
+" color deus
+color gruvbox
 
 " fzf.vim
 " Ctrl+p 查看文件列表
 " Ctrl+e 查看当前Buffer，两次Ctrl+e快速切换上次打开的Buffer
-nnoremap <C-p> :Files<CR>
-nnoremap <C-e> :Buffers<CR>
+nnoremap <silent><C-p> :Files<CR>
+nnoremap <silent><C-e> :Buffers<CR>
 let g:fzf_action = { 'ctrl-e': 'edit' }
 
 " nerdtree
-nnoremap tt :NERDTreeToggle<CR>
+nnoremap <silent>tt :NERDTreeToggle<CR>

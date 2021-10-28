@@ -1,8 +1,13 @@
 " ruby provider
 " let g:ruby_host_prog = '/home/fengwk/.local/share/gem/ruby/3.0.0/bin/neovim-ruby-host'
 
+" 修正leader键映射为\
+let mapleader="\\"
+
 " 打开代码高亮
 syntax on
+" 打开真彩色支持
+set termguicolors
 " 使配色能更加兼容终端
 let &t_ut=''
 " 透明背景
@@ -74,16 +79,16 @@ set clipboard=unnamed
 " map S <nop>
 
 " split window
-nnoremap <C-s>h :set nosplitright<CR>:vs<CR>
-nnoremap <C-s>l :set splitright<CR>:vs<CR>
-nnoremap <C-s>k :set nosplitbelow<CR>:sp<CR>
-nnoremap <C-s>j :set splitbelow<CR>:sp<CR>
-nnoremap <C-w>= :res +5<CR>
-nnoremap <C-w>- :res -5<CR>
-nnoremap <C-w>== :vertical res +5<CR>
-nnoremap <C-w>-- :vertical res -5<CR>
-" nnoremap <left> :vertical resize-5<CR>
-" nnoremap <right> :vertical resize+5<CR>
+nnoremap <silent><a-w>h :set nosplitright<cr>:vs<cr>
+nnoremap <silent><a-w>l :set splitright<cr>:vs<cr>
+nnoremap <silent><a-w>k :set nosplitbelow<cr>:sp<cr>
+nnoremap <silent><a-w>j :set splitbelow<cr>:sp<cr>
+nnoremap <silent><c-w>= :res +5<cr>
+nnoremap <silent><c-w>- :res -5<cr>
+nnoremap <silent><c-w>== :vertical res +5<cr>
+nnoremap <silent><c-w>-- :vertical res -5<cr>
+" nnoremap <left> :vertical resize-5<cr>
+" nnoremap <right> :vertical resize+5<cr>
 
 " 使用Ctrl+s保存缓冲区
 " inoremap <C-s> <Esc>:w<CR>gi
@@ -92,11 +97,11 @@ nnoremap <C-w>-- :vertical res -5<CR>
 " nnoremap <C-q> :q<CR>
 
 " quick down
-nnoremap <C-j> 5j
-vnoremap <C-j> 5j
+nnoremap <c-j> 5j
+vnoremap <c-j> 5j
 " quick up
-nnoremap <C-k> 5k
-vnoremap <C-k> 5k
+nnoremap <c-k> 5k
+vnoremap <c-k> 5k
 
 " 重新打开时光标定位到退出时的位置
 if has("autocmd")
