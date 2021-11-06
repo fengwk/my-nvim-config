@@ -91,4 +91,4 @@ let g:mkdp_page_title = '「${name}」'
 let g:mkdp_filetypes = ['markdown']
 
 " markdown-preview
-nnoremap <silent>mm :MarkdownPreviewToggle<CR>
+nnoremap <silent><leader>m :MarkdownPreviewToggle<CR>

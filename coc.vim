@@ -1,6 +1,7 @@
 " https://github.com/neoclide/coc.nvim/wiki/Using-coc-extensions
 " 解决jdt不可用：https://blog.csdn.net/lxyoucan/article/details/115460229
 let g:coc_global_extensions = [
+    \ "coc-translator",
     \ "coc-prettier",
     \ "coc-vimlsp",
     \ "coc-sql",
@@ -15,6 +16,11 @@ let g:coc_global_extensions = [
     \ "coc-css",
     \ "coc-tsserver",
     \ "coc-java"]
+
+" coc-translator
+" popup
+nmap <Leader>t <Plug>(coc-translator-p)
+vmap <Leader>t <Plug>(coc-translator-pv)
 
 " Set internal encoding of vim, not needed on neovim, since coc.nvim using some
 " unicode characters in the file autoload/float.vim
@@ -50,18 +56,18 @@ inoremap <silent><expr> <a-enter> coc#refresh()
 inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm()
                               \: "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
 
-" 使用'[g'或']g'查找上一个或下一个代码报错
-nmap <silent> [g <Plug>(coc-diagnostic-prev)
-nmap <silent> ]g <Plug>(coc-diagnostic-next)
+" 查找上一个或下一个代码报错
+nmap <silent> <leader>[ <Plug>(coc-diagnostic-prev)
+nmap <silent> <leader>] <Plug>(coc-diagnostic-next)
 
 " 跳到函数定义
-nmap <silent> gd <Plug>(coc-definition)
+nmap <silent> <leader>d <Plug>(coc-definition)
 " 跳到类型定义
-nmap <silent> gy <Plug>(coc-type-definition)
+nmap <silent> <leader>y <Plug>(coc-type-definition)
 " 跳到实现
-nmap <silent> gi <Plug>(coc-implementation)
+nmap <silent> <leader>i <Plug>(coc-implementation)
 " 跳到引用
-nmap <silent> gr <Plug>(coc-references)
+nmap <silent> <leader>r <Plug>(coc-references)
 
 " 使用K在预览窗口查看文档
 nnoremap <silent> K :call <SID>show_documentation()<CR>

@@ -1,29 +1,34 @@
 " ruby provider
 " let g:ruby_host_prog = '/home/fengwk/.local/share/gem/ruby/3.0.0/bin/neovim-ruby-host'
 
+" filetype on
+" filetype indent on
+" filetype plugin on
+" filetype plugin indent on
+
 " 修正leader键映射为\
 let mapleader="\\"
 
-" 打开代码高亮
-syntax on
-" 打开真彩色支持
-set termguicolors
-" 使配色能更加兼容终端
-let &t_ut=''
-" 透明背景
-" hi Normal ctermfg=252 ctermbg=none
+" 语法高亮
+" syntax on
+" autocmd 关闭指定后缀文件的语法高亮
+autocmd BufNewFile,BufRead *.json,*.md exec 'syntax off'
 
 " 设置编码
 set encoding=utf-8
 
 " 开启行号显示
-set number
+set nu
+" 开启相对行号
+set rnu
 
 " 设置超出长度显示换行
 set wrap
 
 " 滚动时保持上下边距
 " set scrolloff=5
+" 该设置可以将光标定位到窗口中间位置
+set scrolloff=999
 
 " 光标遇到圆括号、方括号、大括号时，自动高亮对应的另一个圆括号、方括号和大括号
 " set showmatch

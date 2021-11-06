@@ -55,10 +55,16 @@ call plug#end()
 source $HOME/.config/nvim/coc.vim
 source $HOME/.config/nvim/markdown-preview.vim
 
+" 打开真彩色支持
+set termguicolors
+" 使配色能更加兼容终端
+let &t_ut=''
 " 配色方案
 " color snazzy
 " color deus
 color gruvbox
+" 背景透明
+highlight Normal guibg=NONE ctermbg=None
 
 " fzf.vim
 " Ctrl+p 查看文件列表
