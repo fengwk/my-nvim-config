@@ -45,7 +45,7 @@ set hlsearch
 " 避免新打开文件时还有高亮
 exec "nohlsearch"
 " 使用Ctrl+l清除高亮
-nmap <silent> <C-l> :noh<CR>
+" nmap <silent> <C-l> :noh<CR>
 
 " 边搜索边高亮
 set incsearch
@@ -107,6 +107,12 @@ vnoremap <c-j> 5j
 " quick up
 nnoremap <c-k> 5k
 vnoremap <c-k> 5k
+" quick left
+nnoremap <c-h> 5h
+vnoremap <c-h> 5h
+" quick right
+nnoremap <c-l> 5l
+vnoremap <c-l> 5l
 
 " 重新打开时光标定位到退出时的位置
 if has("autocmd")

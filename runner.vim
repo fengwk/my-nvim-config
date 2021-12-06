@@ -5,7 +5,7 @@ function Runner()
     elseif &filetype == 'python'
         exec ':!python %'
     elseif &filetype == 'java'
-        exec ':!f="A.java" && javac $f && java ${f/.java/}'
+        exec ':!f=% && javac $f && java ${f/.java/}'
     endif
 endfunction
 

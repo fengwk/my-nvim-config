@@ -7,14 +7,17 @@ call plug#begin('~/.config/nvim/plugged')
 " https://github.com/vim-airline/vim-airline
 Plug 'vim-airline/vim-airline'
 
-" snazzy配色
+" snazzy 配色
 Plug 'connorholyday/vim-snazzy'
 
-" deus配色
+" deus 配色
 Plug 'theniceboy/nvim-deus'
 
-" gruvbox配色
+" gruvbox 配色
 Plug 'morhetz/gruvbox'
+
+" dracula 配色
+Plug 'dracula/vim'
 
 " indentline 缩进线
 " https://github.com/Yggdroot/indentLine
@@ -62,9 +65,10 @@ let &t_ut=''
 " 配色方案
 " color snazzy
 " color deus
-color gruvbox
+" color gruvbox
+color dracula
 " 背景透明
-highlight Normal guibg=NONE ctermbg=None
+" highlight Normal guibg=NONE ctermbg=None
 
 " fzf.vim
 " Ctrl+p 查看文件列表
