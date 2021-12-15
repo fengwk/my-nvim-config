@@ -55,8 +55,8 @@ Plug 'godlygeek/tabular'
 
 call plug#end()
 
-source $HOME/.config/nvim/coc.vim
-source $HOME/.config/nvim/markdown-preview.vim
+source ./coc.vim
+source ./markdown-preview.vim
 
 " 打开真彩色支持
 set termguicolors
