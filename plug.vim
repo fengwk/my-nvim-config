@@ -26,7 +26,7 @@ Plug 'Yggdroot/indentLine'
 " nerdtree 文件树
 " https://github.com/preservim/nerdtree
 " 快捷键 https://www.cnblogs.com/qiumingcheng/p/6275510.html
-Plug 'preservim/nerdtree'
+" Plug 'preservim/nerdtree'
 
 " fzf.vim
 " https://github.com/junegunn/fzf.vim
@@ -53,10 +53,17 @@ Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
 " https://github.com/godlygeek/tabular
 Plug 'godlygeek/tabular'
 
+" vim-eclim
+" Plug 'dansomething/vim-eclim'
+
+" nerdcommenter
+Plug 'preservim/nerdcommenter'
+
 call plug#end()
 
 source $HOME/.config/nvim/coc.vim
 source $HOME/.config/nvim/markdown-preview.vim
+source $HOME/.config/nvim/nerdcommenter.vim
 
 " 打开真彩色支持
 set termguicolors
@@ -76,6 +83,3 @@ color dracula
 nnoremap <silent><C-p> :Files<CR>
 nnoremap <silent><C-e> :Buffers<CR>
 let g:fzf_action = { 'ctrl-e': 'edit' }
-
-" nerdtree
-nnoremap <silent>tt :NERDTreeToggle<CR>

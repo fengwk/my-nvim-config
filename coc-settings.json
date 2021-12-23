@@ -38,5 +38,17 @@
   "diagnostic.virtualText": false,
   "codeLens.enable": true,
   "coc.preferences.formatOnSaveFiletypes": [],
-  "translator.engines": ["youdao"]
+  "translator.engines": ["youdao"],
+  "java.configuration.runtimes": [
+      {
+        "name": "JavaSE-1.8",
+        "path": "/usr/lib/jvm/java-8-openjdk",
+        "default": true
+      }
+  ],
+  "java.jdt.ls.vmargs": "-javaagent:/home/fengwk/.config/nvim/lombok.jar",
+  "java.import.maven.enabled": true,
+  "java.configuration.maven.userSettings": "/opt/maven/conf/settings.xml",
+  "java.maven.downloadSources": true,
+  "java.maven.updateSnapshots": true
 }
