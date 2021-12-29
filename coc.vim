@@ -1,7 +1,6 @@
 " https://github.com/neoclide/coc.nvim/wiki/Using-coc-extensions
 " 解决jdt不可用：https://blog.csdn.net/lxyoucan/article/details/115460229
 let g:coc_global_extensions = [
-    \ "coc-translator",
     \ "coc-prettier",
     \ "coc-vimlsp",
     \ "coc-sql",
@@ -20,8 +19,8 @@ let g:coc_global_extensions = [
 
 " coc-translator
 " popup
-nmap <Leader>t <Plug>(coc-translator-p)
-vmap <Leader>t <Plug>(coc-translator-pv)
+" nmap <Leader>t <Plug>(coc-translator-p)
+" vmap <Leader>t <Plug>(coc-translator-pv)
 
 " coc-explorer
 nmap tt <Cmd>CocCommand explorer<CR>
@@ -53,8 +52,8 @@ function! s:check_back_space() abort
   return !col || getline('.')[col - 1]  =~# '\s'
 endfunction
 
-"  使用alt+enter调出补全窗口
-inoremap <silent><expr> <a-enter> coc#refresh()
+" 使用alt+enter调出补全窗口
+" inoremap <silent><expr> <a-enter> coc#refresh()
 
 " 使回车键选中补全内容而非换行
 inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm()
@@ -109,9 +108,11 @@ xmap <leader>a  <Plug>(coc-codeaction-selected)
 nmap <leader>a  <Plug>(coc-codeaction-selected)
 
 " Remap keys for applying codeAction to the current buffer.
-" nmap <leader>ac  <Plug>(coc-codeaction)
+nmap <leader>ac  <Plug>(coc-codeaction)
+" fix current word
+nmap <leader>aw viw<leader>ac
 " Apply AutoFix to problem on the current line.
-" nmap <leader>qf  <Plug>(coc-fix-current)
+nmap <leader>qf  <Plug>(coc-fix-current)
 
 " Map function and class text objects
 " NOTE: Requires 'textDocument.documentSymbol' support from the language server.
@@ -136,8 +137,8 @@ nmap <leader>a  <Plug>(coc-codeaction-selected)
 
 " Use CTRL-S for selections ranges.
 " Requires 'textDocument/selectionRange' support of language server.
-" nmap <silent> <C-s> <Plug>(coc-range-select)
-" xmap <silent> <C-s> <Plug>(coc-range-select)
+nmap <silent> <C-s> <Plug>(coc-range-select)
+xmap <silent> <C-s> <Plug>(coc-range-select)
 
 " Add `:Format` command to format current buffer.
 " command! -nargs=0 Format :call CocAction('format')
@@ -155,18 +156,20 @@ nmap <leader>a  <Plug>(coc-codeaction-selected)
 
 " Mappings for CoCList
 " Show all diagnostics.
-" nnoremap <silent><nowait> <space>a  :<C-u>CocList diagnostics<cr>
+nnoremap <silent><nowait> <space>a  :<C-u>CocList diagnostics<cr>
 " Manage extensions.
-" nnoremap <silent><nowait> <space>e  :<C-u>CocList extensions<cr>
+nnoremap <silent><nowait> <space>e  :<C-u>CocList extensions<cr>
 " Show commands.
-" nnoremap <silent><nowait> <space>c  :<C-u>CocList commands<cr>
+nnoremap <silent><nowait> <space>c  :<C-u>CocList commands<cr>
 " Find symbol of current document.
-" nnoremap <silent><nowait> <space>o  :<C-u>CocList outline<cr>
+" 查看outline
+nnoremap <silent><nowait> <space>o  :<C-u>CocList outline<cr>
 " Search workspace symbols.
-" nnoremap <silent><nowait> <space>s  :<C-u>CocList -I symbols<cr>
+" 符号搜索，在java中可进行类型搜索
+nnoremap <silent><nowait> <space>s  :<C-u>CocList -I symbols<cr>
 " Do default action for next item.
-" nnoremap <silent><nowait> <space>j  :<C-u>CocNext<CR>
+nnoremap <silent><nowait> <space>j  :<C-u>CocNext<CR>
 " Do default action for previous item.
-" nnoremap <silent><nowait> <space>k  :<C-u>CocPrev<CR>
+nnoremap <silent><nowait> <space>k  :<C-u>CocPrev<CR>
 " Resume latest coc list.
-" nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
+nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>

@@ -59,6 +59,9 @@ Plug 'godlygeek/tabular'
 " nerdcommenter
 Plug 'preservim/nerdcommenter'
 
+" vim-translator
+Plug 'voldikss/vim-translator'
+
 call plug#end()
 
 source $HOME/.config/nvim/coc.vim
@@ -83,3 +86,7 @@ color dracula
 nnoremap <silent><C-p> :Files<CR>
 nnoremap <silent><C-e> :Buffers<CR>
 let g:fzf_action = { 'ctrl-e': 'edit' }
+
+" vim translator
+nmap <silent> <leader>t :Translate --engines=haici<cr>
+vmap <silent> <leader>t :Translate --engines=google<cr>

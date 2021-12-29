@@ -46,6 +46,7 @@ set hlsearch
 exec "nohlsearch"
 " 使用Ctrl+l清除高亮
 " nmap <silent> <C-l> :noh<CR>
+nmap <silent> <c-n> :noh<CR>
 
 " 边搜索边高亮
 set incsearch
@@ -118,3 +119,9 @@ vnoremap <c-l> 5l
 if has("autocmd")
     au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 endif
+
+" 将光标所在单词替换为寄存器中内容
+nnoremap tr "_diwP
+" 快速将内容复制到系统剪切板
+nnoremap ty "+y
+vnoremap ty "+y
