@@ -1,7 +1,6 @@
 " https://github.com/neoclide/coc.nvim/wiki/Using-coc-extensions
 " 解决jdt不可用：https://blog.csdn.net/lxyoucan/article/details/115460229
 let g:coc_global_extensions = [
-    \ "coc-prettier",
     \ "coc-vimlsp",
     \ "coc-sql",
     \ "coc-yaml",
@@ -93,7 +92,8 @@ nmap <leader>rn <Plug>(coc-rename)
 
 " Formatting selected code.
 xmap <leader>f  <Plug>(coc-format-selected)
-nmap <leader>f  <Plug>(coc-format-selected)
+" nmap <leader>f  <Plug>(coc-format-selected)
+nmap <leader>f  mmggVG\f`m
 
 augroup mygroup
   autocmd!

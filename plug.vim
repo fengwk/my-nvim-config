@@ -62,6 +62,10 @@ Plug 'preservim/nerdcommenter'
 " vim-translator
 Plug 'voldikss/vim-translator'
 
+" vim-editorconfig
+" https://github.com/sgur/vim-editorconfig
+Plug 'sgur/vim-editorconfig'
+
 call plug#end()
 
 source $HOME/.config/nvim/coc.vim
@@ -90,3 +94,6 @@ let g:fzf_action = { 'ctrl-e': 'edit' }
 " vim translator
 nmap <silent> <leader>t :Translate --engines=haici<cr>
 vmap <silent> <leader>t :Translate --engines=google<cr>
+
+" vim-editorconfig
+let g:editorconfig_verbose=1

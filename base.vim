@@ -63,7 +63,7 @@ set softtabstop=4
 " 设置 >> << == 时的缩进宽度
 set shiftwidth=4
 " 使用空格进行缩进
-set expandtab
+" set expandtab
 " 设置换行自动缩进
 set autoindent
 
