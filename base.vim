@@ -121,7 +121,14 @@ if has("autocmd")
 endif
 
 " 将光标所在单词替换为寄存器中内容
-nnoremap tr "_diwP
+" nnoremap tr "_diwP
+nnoremap rp viwp
 " 快速将内容复制到系统剪切板
-nnoremap ty "+y
-vnoremap ty "+y
+" nnoremap ty "+y
+" vnoremap ty "+y
+
+" 插入模式下输入右侧符号并定位到合适位置
+" inoremap <c-]>}} <cr>}<esc>O
+" inoremap <c-]>}  }<esc>i
+" inoremap <c-]>)) <cr>)<esc>O
+" inoremap <c-]>)  )<esc>i

@@ -9,4 +9,4 @@ function Runner()
     endif
 endfunction
 
-nnoremap <silent>tg :call Runner()<cr>
+nnoremap <silent>rr :call Runner()<cr>
