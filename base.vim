@@ -1,6 +1,7 @@
 " ruby provider
 " let g:ruby_host_prog = '/home/fengwk/.local/share/gem/ruby/3.0.0/bin/neovim-ruby-host'
 
+filetype on
 " filetype on
 " filetype indent on
 " filetype plugin on
@@ -28,7 +29,7 @@ set wrap
 " 滚动时保持上下边距
 " set scrolloff=5
 " 该设置可以将光标定位到窗口中间位置
-set scrolloff=999
+" set scrolloff=999
 
 " 光标遇到圆括号、方括号、大括号时，自动高亮对应的另一个圆括号、方括号和大括号
 " set showmatch
@@ -63,7 +64,7 @@ set softtabstop=4
 " 设置 >> << == 时的缩进宽度
 set shiftwidth=4
 " 使用空格进行缩进
-" set expandtab
+set expandtab
 " 设置换行自动缩进
 set autoindent
 

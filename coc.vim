@@ -22,7 +22,7 @@ let g:coc_global_extensions = [
 " vmap <Leader>t <Plug>(coc-translator-pv)
 
 " coc-explorer
-nmap tt <Cmd>CocCommand explorer<CR>
+nnoremap <silent> tt :CocCommand explorer<cr>
 
 " Set internal encoding of vim, not needed on neovim, since coc.nvim using some
 " unicode characters in the file autoload/float.vim

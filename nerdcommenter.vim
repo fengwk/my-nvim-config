@@ -15,7 +15,7 @@ let g:NERDAltDelims_java = 1
 
 " Add your own custom formats or override the defaults
 let g:NERDCustomDelimiters = { 
-    \ 'c': { 'left': '/**', 'right': '*/' }, 
+    \ 'c': { 'left': '/*', 'right': '*/' }, 
     \ 'java': { 'left': '/**', 'right': '*/' }, 
     \ 'go': { 'left': '// ' }
     \ }

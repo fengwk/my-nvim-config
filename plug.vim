@@ -66,11 +66,18 @@ Plug 'voldikss/vim-translator'
 " https://github.com/sgur/vim-editorconfig
 Plug 'sgur/vim-editorconfig'
 
+" minimap.vim
+" https://github.com/wfxr/minimap.vim
+" yay -S code-minimap
+" https://github.com/wfxr/code-minimap
+Plug 'wfxr/minimap.vim'
+
 call plug#end()
 
 source $HOME/.config/nvim/coc.vim
 source $HOME/.config/nvim/markdown-preview.vim
 source $HOME/.config/nvim/nerdcommenter.vim
+source $HOME/.config/nvim/minimap.vim
 
 " 打开真彩色支持
 set termguicolors
@@ -96,4 +103,4 @@ nmap <silent> <leader>t :Translate --engines=haici<cr>
 vmap <silent> <leader>t :Translate --engines=google<cr>
 
 " vim-editorconfig
-let g:editorconfig_verbose=1
+let g:editorconfig_verbose = 1
