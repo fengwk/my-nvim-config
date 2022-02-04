@@ -70,14 +70,25 @@ Plug 'sgur/vim-editorconfig'
 " https://github.com/wfxr/minimap.vim
 " yay -S code-minimap
 " https://github.com/wfxr/code-minimap
-Plug 'wfxr/minimap.vim'
+" Plug 'wfxr/minimap.vim'
+
+" md-img-paste.vim
+" https://github.com/ferrine/md-img-paste.vim
+Plug 'ferrine/md-img-paste.vim'
+
+" honza/vim-snippets
+" https://github.com/honza/vim-snippets
+" snippets模板，配合coc-snippets使用
+" https://zhuanlan.zhihu.com/p/107277463
+Plug 'honza/vim-snippets'
 
 call plug#end()
 
 source $HOME/.config/nvim/coc.vim
 source $HOME/.config/nvim/markdown-preview.vim
 source $HOME/.config/nvim/nerdcommenter.vim
-source $HOME/.config/nvim/minimap.vim
+" source $HOME/.config/nvim/minimap.vim
+source $HOME/.config/nvim/md-img-paste.vim
 
 " 打开真彩色支持
 set termguicolors
