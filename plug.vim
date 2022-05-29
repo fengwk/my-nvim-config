@@ -100,7 +100,7 @@ let &t_ut=''
 " color gruvbox
 color dracula
 " 背景透明
-" highlight Normal guibg=NONE ctermbg=None
+highlight Normal guibg=NONE ctermbg=None
 
 " fzf.vim
 " Ctrl+p 查看文件列表
