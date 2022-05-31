@@ -82,6 +82,10 @@ Plug 'ferrine/md-img-paste.vim'
 " https://zhuanlan.zhihu.com/p/107277463
 Plug 'honza/vim-snippets'
 
+" wsl复制黏贴
+" https://github.com/Konfekt/vim-wsl-copy-paste
+Plug 'Konfekt/vim-wsl-copy-paste'
+
 call plug#end()
 
 source $HOME/.config/nvim/coc.vim
@@ -96,9 +100,9 @@ set termguicolors
 let &t_ut=''
 " 配色方案
 " color snazzy
-" color deus
+color deus
 " color gruvbox
-color dracula
+" color dracula
 " 背景透明
 highlight Normal guibg=NONE ctermbg=None
 
