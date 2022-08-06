@@ -64,7 +64,9 @@
 | **:blast**                                         | 跳到最后一个缓冲区                             |
 | **:e path**                                        | 打开新的缓冲区，edit                           |
 | **:split** 或 **:sp** 或 **ctrl+w+s**              | 水平分割窗口                                   |
-| **:vsplit** 或 **:vsp** 或 **:vs** 或 **ctrl+w+v** | 垂直分隔窗口                                   |
+| **:vsplit** 或 **:vsp** 或 **:vs** 或 **ctrl+w+v** | 垂直分割窗口                                   |
+| **ctrl+w+s**                                       | 水平分割窗口                                   |
+| **ctrl+w+v**                                       | 垂直分割窗口                                   |
 | **:set nosplitright**                              | 分割窗口后默认左边活跃                         |
 | **:set splitright**                                | 分割窗口后默认右边活跃                         |
 | **:set nosplitbelow**                              | 分割窗口后默认上边活跃                         |
